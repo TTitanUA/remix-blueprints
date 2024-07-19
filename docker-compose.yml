@@ -1,0 +1,20 @@
+name: 'remix-blueprints'
+
+services:
+  editor:
+    build:
+      context: ./docker/node
+      args:
+        - UID=$UID
+        - GID=$GID
+        - USER_NAME=$UID
+    user: $UID:$GID
+    volumes:
+      - ./source:/app
+    ports:
+      - 30000:3000
+    working_dir: /app
+    command:
+      - npm
+      - run
+      - dev
