@@ -23,7 +23,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./remix-blueprints",
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "core/*": ["./core/*"],
     },
 
     // Vite takes care of building everything, not tsc.
