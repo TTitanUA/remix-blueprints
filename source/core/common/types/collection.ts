@@ -1,6 +1,6 @@
 import { ENativeType, ICollectionType, TCommonType } from '../interfaces/types'
 
-class CommonTypeCollection implements ICollectionType {
+export class CommonTypeCollection implements ICollectionType {
   nativeType = ENativeType.Collection as const
 
   constructor (

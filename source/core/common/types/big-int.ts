@@ -1,6 +1,6 @@
 import { ENativeType, IBigIntType } from '../interfaces/types'
 
-class CommonTypeBigInt implements IBigIntType {
+export class CommonTypeBigInt implements IBigIntType {
   nativeType = ENativeType.BigInt as const
 
   constructor (

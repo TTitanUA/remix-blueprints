@@ -1,6 +1,6 @@
 import { ENativeType, IUnknownType } from '../interfaces/types'
 
-class CommonTypeUnknown implements IUnknownType {
+export class CommonTypeUnknown implements IUnknownType {
   nativeType = ENativeType.Unknown as const
 
   constructor (

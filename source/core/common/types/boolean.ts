@@ -1,6 +1,6 @@
 import { ENativeType, IBooleanType } from '../interfaces/types'
 
-class CommonTypeBoolean implements IBooleanType {
+export class CommonTypeBoolean implements IBooleanType {
   nativeType = ENativeType.Boolean as const
 
   constructor (

@@ -1,6 +1,6 @@
 import { ENativeType, IFunctionType, ITupleType, TCommonType } from '../interfaces/types'
 
-class CommonTypeFunction implements IFunctionType {
+export class CommonTypeFunction implements IFunctionType {
   nativeType = ENativeType.Function as const
 
   constructor (

@@ -1,6 +1,6 @@
 import { ENativeType, IListType, TCommonType } from '../interfaces/types'
 
-class CommonTypeList implements IListType {
+export class CommonTypeList implements IListType {
   nativeType = ENativeType.List as const
 
   constructor (

@@ -1,6 +1,6 @@
 import { ENativeType, IStringType } from '../interfaces/types'
 
-class CommonTypeString implements IStringType {
+export class CommonTypeString implements IStringType {
   nativeType = ENativeType.String as const
 
   constructor (

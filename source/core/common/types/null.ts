@@ -1,6 +1,6 @@
 import { ENativeType, INullType } from '../interfaces/types'
 
-class CommonTypeNull implements INullType {
+export class CommonTypeNull implements INullType {
   nativeType = ENativeType.Null as const
 
   constructor (

@@ -1,6 +1,6 @@
 import { ENativeType, INumberType } from '../interfaces/types'
 
-class CommonTypeNumber implements INumberType {
+export class CommonTypeNumber implements INumberType {
   nativeType = ENativeType.Number as const
 
   constructor (

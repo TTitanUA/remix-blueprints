@@ -1,6 +1,6 @@
 import { ENativeType, IVoidType } from '../interfaces/types'
 
-class CommonVoidType implements IVoidType {
+export class CommonVoidType implements IVoidType {
   nativeType = ENativeType.Void as const
 
   constructor (

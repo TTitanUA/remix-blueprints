@@ -1,6 +1,6 @@
 import { ENativeType, ITupleItem, ITupleType, TCommonType } from '../interfaces/types'
 
-class CommonTypeTuple implements ITupleType {
+export class CommonTypeTuple implements ITupleType {
   nativeType = ENativeType.Tuple as const
 
   constructor (
@@ -10,7 +10,7 @@ class CommonTypeTuple implements ITupleType {
   ) {}
 }
 
-class CommonTypeTupleItem implements ITupleItem {
+export class CommonTypeTupleItem implements ITupleItem {
   constructor (
     public name: string = 'tuple',
     public description: string = 'A tuple',

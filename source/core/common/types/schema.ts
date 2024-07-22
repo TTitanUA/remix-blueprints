@@ -1,6 +1,6 @@
 import { ENativeType, ISchemaType, ISchemaField, TCommonType } from '../interfaces/types'
 
-class CommonTypeSchema implements ISchemaType {
+export class CommonTypeSchema implements ISchemaType {
   nativeType = ENativeType.Schema as const
 
   constructor (
@@ -10,7 +10,7 @@ class CommonTypeSchema implements ISchemaType {
   ) {}
 }
 
-class CommonTypeSchemaField implements ISchemaField {
+export class CommonTypeSchemaField implements ISchemaField {
   constructor (
     public name: string = 'schema field',
     public description: string = 'A schema field type',
